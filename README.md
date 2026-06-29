@@ -155,4 +155,4 @@ Jogador digita /cloud
 
 ---
 
-Desenvolvido para a infraestrutura **ArtixCloud** | https://artixcloud.com
+Desenvolvido para a infraestrutura **ArtixCloud** | https://artix.cloud
