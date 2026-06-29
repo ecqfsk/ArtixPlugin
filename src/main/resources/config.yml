@@ -1,0 +1,115 @@
+# ===================================================
+#           ArtixCloud Plugin - Configuração
+#            https://artixcloud.com
+# ===================================================
+
+# Configurações da API ArtixCloud
+api:
+  base-url: "https://api.artixcloud.com/v1"
+  token: "SEU_TOKEN_API_AQUI"
+  timeout-seconds: 30
+  retry-attempts: 3
+
+# Configurações do Banco de Dados MySQL
+database:
+  host: "localhost"
+  port: 3306
+  name: "artixcloud"
+  username: "root"
+  password: "password"
+  # Configurações do Pool de Conexões (HikariCP)
+  pool:
+    maximum-pool-size: 10
+    minimum-idle: 2
+    connection-timeout: 30000
+    idle-timeout: 600000
+    max-lifetime: 1800000
+
+# Sistema Gratuito
+free-plan:
+  enabled: true
+  max-servers-per-player: 1
+  # Cooldown em segundos entre criações de servidor (3600 = 1 hora)
+  creation-cooldown: 3600
+  # Anti-abuso: número máximo de criações por dia
+  max-daily-creations: 2
+
+# Planos disponíveis (sincronizados com a API)
+plans:
+  - id: "free"
+    display-name: "&aGratuito"
+    ram: "512MB"
+    cpu: "0.5 vCPU"
+    storage: "5GB"
+    players: 10
+    price: "R$ 0,00/mês"
+    icon: GRASS_BLOCK
+
+  - id: "starter"
+    display-name: "&eStarter"
+    ram: "1GB"
+    cpu: "1 vCPU"
+    storage: "10GB"
+    players: 20
+    price: "R$ 9,90/mês"
+    icon: STONE
+
+  - id: "pro"
+    display-name: "&bPro"
+    ram: "2GB"
+    cpu: "2 vCPU"
+    storage: "25GB"
+    players: 50
+    price: "R$ 24,90/mês"
+    icon: IRON_BLOCK
+
+  - id: "ultra"
+    display-name: "&6Ultra"
+    ram: "4GB"
+    cpu: "4 vCPU"
+    storage: "50GB"
+    players: 100
+    price: "R$ 49,90/mês"
+    icon: GOLD_BLOCK
+
+  - id: "enterprise"
+    display-name: "&dEnterprise"
+    ram: "8GB"
+    cpu: "8 vCPU"
+    storage: "100GB"
+    players: 250
+    price: "R$ 99,90/mês"
+    icon: DIAMOND_BLOCK
+
+# Versões do Minecraft disponíveis
+versions:
+  - "1.21.1"
+  - "1.20.4"
+  - "1.20.1"
+  - "1.19.4"
+  - "1.18.2"
+  - "1.17.1"
+  - "1.16.5"
+  - "1.12.2"
+  - "1.8.8"
+
+# Menus
+menus:
+  # Tamanho das linhas (múltiplos de 9)
+  main-menu-rows: 4
+  plans-menu-rows: 6
+  server-menu-rows: 5
+  create-menu-rows: 4
+
+# Agendadores
+schedulers:
+  # Intervalo de atualização de status em ticks (20 ticks = 1 segundo)
+  status-update-interval: 200
+  # Intervalo de limpeza de cache em segundos
+  cache-cleanup-interval: 300
+
+# Idioma (pt_BR ou en_US)
+language: "pt_BR"
+
+# Debug mode (exibe informações extras no console)
+debug: false

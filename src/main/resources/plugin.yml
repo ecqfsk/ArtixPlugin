@@ -1,0 +1,29 @@
+name: ArtixCloud
+version: '1.0.0'
+main: com.artixcloud.ArtixCloud
+api-version: '1.21'
+description: Hospedagem Minecraft integrada ao jogo via ArtixCloud
+authors: [ArtixCloud Team]
+website: https://artixcloud.com
+load: POSTWORLD
+
+commands:
+  cloud:
+    description: Abre o painel ArtixCloud
+    aliases: [artix, hospedagem]
+    usage: /cloud [subcommand]
+    permission: artixcloud.use
+
+permissions:
+  artixcloud.use:
+    description: Permite usar o comando /cloud
+    default: true
+  artixcloud.admin:
+    description: Acesso a funções administrativas do ArtixCloud
+    default: op
+  artixcloud.bypass.cooldown:
+    description: Bypassa o cooldown de criação de servidores
+    default: op
+  artixcloud.bypass.limit:
+    description: Bypassa o limite de servidores gratuitos
+    default: op

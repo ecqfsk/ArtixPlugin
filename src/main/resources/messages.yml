@@ -1,0 +1,81 @@
+# ===================================================
+#        ArtixCloud Plugin - Mensagens (pt_BR)
+# ===================================================
+# Use & para cores. Suporta PlaceholderAPI.
+# %player% = nome do jogador
+# %server% = nome do servidor
+# %plan% = nome do plano
+# %status% = status do servidor
+
+prefix: "&8[&bArtix&3Cloud&8] &r"
+
+general:
+  no-permission: "&cVocê não tem permissão para isso."
+  player-only: "&cEste comando só pode ser usado por jogadores."
+  loading: "&7Carregando informações..."
+  error: "&cOcorreu um erro. Tente novamente mais tarde."
+  success: "&aOperação realizada com sucesso!"
+  cancelled: "&cOperação cancelada."
+
+cloud:
+  open-menu: "&7Abrindo painel ArtixCloud..."
+  api-offline: "&cA API da ArtixCloud está indisponível no momento. Tente mais tarde."
+  first-access: "&aOlá, %player%! Bem-vindo à &bArtix&3Cloud&a!"
+
+server:
+  created: "&aSeu servidor &e%server% &afoi criado com sucesso!"
+  creation-failed: "&cFalha ao criar o servidor. Verifique as informações e tente novamente."
+  creating: "&7Criando seu servidor &e%server%&7..."
+  starting: "&7Iniciando o servidor &e%server%&7..."
+  stopping: "&7Parando o servidor &e%server%&7..."
+  restarting: "&7Reiniciando o servidor &e%server%&7..."
+  deleting: "&7Excluindo o servidor &e%server%&7..."
+  started: "&aServidor &e%server% &ainiciado com sucesso!"
+  stopped: "&aServidor &e%server% &aparado com sucesso!"
+  restarted: "&aServidor &e%server% &areiniciado com sucesso!"
+  deleted: "&aServidor &e%server% &aexcluído com sucesso."
+  start-failed: "&cFalha ao iniciar o servidor &e%server%&c."
+  stop-failed: "&cFalha ao parar o servidor &e%server%&c."
+  restart-failed: "&cFalha ao reiniciar o servidor &e%server%&c."
+  delete-failed: "&cFalha ao excluir o servidor &e%server%&c."
+  not-found: "&cServidor não encontrado."
+  already-running: "&eO servidor &e%server% &ejá está em execução."
+  already-stopped: "&eO servidor &e%server% &ejá está parado."
+  ip-copied: "&aIP copiado para a área de transferência: &e%ip%"
+  no-servers: "&7Você ainda não tem servidores. Crie um agora!"
+
+plan:
+  free-limit: "&cVocê já atingiu o limite de servidores gratuitos (%limit%)."
+  cooldown: "&cAguarde &e%time% &cantes de criar outro servidor."
+  selected: "&ePlano &b%plan% &eselecionado."
+  upgrade-required: "&cEste plano requer uma assinatura ativa. Acesse &bhttps://artixcloud.com&c."
+
+create:
+  enter-name: "&eDigite o nome do seu servidor no chat (máx. 16 caracteres):"
+  name-invalid: "&cNome inválido! Use apenas letras, números e hífens."
+  name-taken: "&cEste nome já está em uso. Escolha outro."
+  name-too-long: "&cNome muito longo! Máximo de 16 caracteres."
+  version-selected: "&eVersão &b%version% &eselecionada."
+  confirm: "&aConfirme a criação do servidor &e%server% &ano plano &b%plan%&a."
+
+status:
+  online: "&aOnline"
+  offline: "&cOffline"
+  starting: "&eIniciando"
+  stopping: "&eParando"
+  restarting: "&eReiniciando"
+  unknown: "&7Desconhecido"
+
+menus:
+  main:
+    title: "&8» &bArtix&3Cloud &8«"
+  plans:
+    title: "&8» &bEscolher Plano &8«"
+  server:
+    title: "&8» &bGerenciar Servidor &8«"
+  create:
+    title: "&8» &bCriar Servidor &8«"
+  version:
+    title: "&8» &bEscolher Versão &8«"
+  confirm:
+    title: "&8» &bConfirmar Criação &8«"
